@@ -16,6 +16,14 @@ interface Props {
   onClose: () => void;
 }
 
+/**
+ * Componente para mostrar el modal.
+ * @param {Object} props - Propiedades del componente.
+ * @param {INoticiasNormalizadas} props.noticia - Objeto de noticia normalizada.
+ * @param {() => void} props.onClose - Manejador de cierre del modal.
+ * @returns {JSX.Element} - Elemento JSX del modal.
+ */
+
 const ModalComponent: React.FC<Props> = ({ noticia, onClose }) => {
   return (
     <ContenedorModal>

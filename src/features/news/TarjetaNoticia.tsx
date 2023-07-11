@@ -13,6 +13,14 @@ interface Props {
   onVerMas: (noticia: INoticiasNormalizadas) => void;
 }
 
+/**
+ * Componente para mostrar una tarjeta de noticia.
+ * @param {Object} props - Propiedades del componente.
+ * @param {INoticiasNormalizadas} props.noticia - Objeto de noticia normalizada.
+ * @param {Function} props.onVerMas - Manejador para ver más detalles de la noticia.
+ * @returns {JSX.Element} - Elemento JSX de la tarjeta de noticia.
+ */
+
 const TarjetaNoticiaComponent: React.FC<Props> = ({ noticia, onVerMas }) => {
   return (
     <TarjetaNoticia>
